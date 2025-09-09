@@ -138,7 +138,7 @@
       <AssemblyReference>Google.Apis.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,12690" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,13073" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsA" />
       <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsM" />
@@ -160,13 +160,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Dentrix Ascend - Overview(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,4271" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Dentrix Ascend - Overview(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,4654" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,4021" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,4404" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -379,6 +379,23 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,383" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:00" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" ContentHash="zyPSSF1OTkWfOL98jfSRZA" DesignTimeRectangle="733, 270, 22, 22" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl parentid='cmdMoreActions' tag='DIV' /&gt;" Guid="e15585cc-2bba-4255-b476-332710dffa63" InformativeScreenshot="446766a53975d23ae6a7efb9d416dfb4.png" Reference="VCEinfAgLEeT0j_lz0nSIw/kn9Z8_bfVkKNUqBI289ekg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
@@ -460,7 +477,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
                   </Sequence>
                 </ActivityAction>
               </ui:RetryScope.ActivityBody>
@@ -654,7 +671,7 @@
                 <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[DateTime.ParseExact(
     CurrentRow("Start Date").ToString().Trim() &amp; " " &amp;
     CurrentRow("Start Time").ToString().Trim(),
-    {"yyyy-MM-dd h:mm tt", "yyyy-MM-dd hh:mm tt", "dd-MM-yyyy h:mm tt",  "dd-MM-yyyy hh:mm tt"},
+    {"yyyy-MM-dd h:mm tt", "yyyy-MM-dd hh:mm tt", "dd-MM-yyyy h:mm tt",  "dd-MM-yyyy hh:mm tt", "MM-dd-yyyy hh:mm tt", "yyyy-dd-MM h:mm tt", "yyyy-dd-MM hh:mm tt"},
     Globalization.CultureInfo.InvariantCulture,
     Globalization.DateTimeStyles.None
 )]</InArgument>
@@ -668,7 +685,7 @@
                 <InArgument x:TypeArguments="ugcm:GSuiteEventItem">[calendarEvents.Where(Function(e) e.Summary.Replace(Chr(0), "").Trim() = summaryId.Replace(Chr(0), "").Trim() AndAlso TimeZoneInfo.ConvertTimeBySystemTimeZoneId(e.Start.DateTime, "America/Chicago") = rowStartDT).FirstOrDefault()]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;CurrentRow: '&quot; &amp; summaryId &amp; &quot;' at &quot; &amp; rowStartDT.ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;) &amp; _&#xA;&quot;' comparing with calendarEvents: &quot; &amp; String.Join(&quot;, &quot;, calendarEvents.Select(Function(e) _&#xA;    e.Summary.Replace(Chr(0), &quot;&quot;).Trim() &amp; &quot;:&quot; &amp; _&#xA;    TimeZoneInfo.ConvertTimeBySystemTimeZoneId(e.Start.DateTime, &quot;America/Chicago&quot;).ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;)))]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;CurrentRow: '&quot; &amp; summaryId &amp; &quot;' at &quot; &amp; rowStartDT.ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;) &amp; _&#xD;&#xA;&quot;' comparing with calendarEvents: &quot; &amp; String.Join(&quot;, &quot;, calendarEvents.Select(Function(e) _&#xD;&#xA;    e.Summary.Replace(Chr(0), &quot;&quot;).Trim() &amp; &quot;:&quot; &amp; _&#xD;&#xA;    TimeZoneInfo.ConvertTimeBySystemTimeZoneId(e.Start.DateTime, &quot;America/Chicago&quot;).ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;)))]" />
             <Assign sap:VirtualizedContainerService.HintSize="596,116" sap2010:WorkflowViewState.IdRef="Assign_11">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:DateTimeOffset">[startDateTime]</OutArgument>
