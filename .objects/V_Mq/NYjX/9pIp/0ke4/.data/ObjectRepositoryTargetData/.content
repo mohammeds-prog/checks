@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mzVPOPpBHEGmGNsNCm6baw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="0ab3d372-304a-4689-9a84-077bc5280883" CvElementArea="973, 499, 101, 38" CvType="InputBox" DesignTimeRectangle="975, 502, 92, 33" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aria-role='textbox' class='dijitReset dijitInputInner' aaname='' tag='INPUT' type='text' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c06d40f6-c738-4937-9c78-51ee7c2a06ae" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0ab3d372-304a-4689-9a84-077bc5280883" CvTextArea="970, 476, 64, 14" CvTextArgument="End Date:" CvType="Text" DesignTimeRectangle="971, 474, 59, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='DP_range2' type='' tag='SPAN' class='' aaname='End Date' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='End Date' /&gt;" Guid="f198ab22-8daa-412b-bb62-3d329903e5c2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="24a152852db697f862b331cbaa8bf8e9.png" xmlns="">0RzGadSUC5kqsxW_Sfh792w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

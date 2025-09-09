@@ -1,0 +1,13 @@
+﻿{
+  "Name": "1 Filter",
+  "Type": "Element",
+  "Id": "IVG-8_0TmESWz2ufu0g0zw",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/IVG-8_0TmESWz2ufu0g0zw",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-08T16:19:36.1326106Z",
+  "Updated": "2025-09-08T16:19:36.1326106Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

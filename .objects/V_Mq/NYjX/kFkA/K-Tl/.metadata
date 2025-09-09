@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ScheduleRecare",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "K-Tl3n85LkW1WkLnatgSKw",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/K-Tl3n85LkW1WkLnatgSKw",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-08T16:44:20.4255703Z",
+  "Updated": "2025-09-08T16:44:20.4255703Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

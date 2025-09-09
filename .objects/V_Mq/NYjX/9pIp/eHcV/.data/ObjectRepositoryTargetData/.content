@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wKqWqnTM10uBxDvYhWpzyQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="3d5f056e-0835-46fc-9d30-788de06006ce" CvElementArea="1049, 694, 89, 42" CvTextArea="1071, 708, 44, 16" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1051, 695, 85, 39" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' /&gt;&lt;webctrl id='dlgBtnDownload' tableRow='1' tag='BUTTON' /&gt;" Guid="f944fed4-d65f-4d1b-9f89-5ee789ad48de" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3d5f056e-0835-46fc-9d30-788de06006ce" CvElementArea="962, 693, 80, 43" CvTextArea="984, 708, 36, 13" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="964, 695, 77, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='dlgBtnSave' type='' tag='BUTTON' class='pentaho-button' aaname='Save settings to report and close this dialog' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Done' /&gt;" Guid="995d4370-1f4d-423e-9497-f44a5a2b7762" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eec6f770354f4b83ad443da8d3592384.png" xmlns="">0n2FWRo5eD0-ng2_Hlpkumw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

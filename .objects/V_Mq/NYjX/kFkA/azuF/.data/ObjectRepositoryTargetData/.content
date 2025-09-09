@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZdSRO-0LDkKWQ4-VU5bG6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="d8c5fe09-b460-4912-8d9b-ab38a811af1e" CvTextArea="870, 691, 136, 14" CvTextArgument="(Select from date picker)" CvType="Text" DesignTimeRectangle="871, 686, 134, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='FT_FILTER_RANGE' tag='TABLE' /&gt;&lt;webctrl id='FT_openDatePicker' tableRow='3' tag='A' /&gt;" Guid="97e7d477-ff12-45a4-b75e-4cdd23532509" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d8c5fe09-b460-4912-8d9b-ab38a811af1e" CvElementArea="869, 647, 119, 35" CvType="InputBox" DesignTimeRectangle="871, 648, 116, 33" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='FT_FILTER_RANGE' tag='TABLE' /&gt;&lt;webctrl id='FT_range1' tableRow='3' tag='SELECT' /&gt;" Guid="c76a6ae6-c238-4237-9d4f-10823ab09f36" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5cbc05acfd2db7a2e95b84ba7c27ac61.png" xmlns="">05hbqOOP5Pk-TtOCdZC-9LQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dY97CbRHI0m4VE_XJukqUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="fe8378d2-8822-46bc-901c-3b767f440ec2" CvElementArea="1088, 735, 65, 42" CvTextArea="1110, 750, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1090, 737, 62, 39" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' /&gt;&lt;webctrl id='dlgBtnSave' tableRow='1' tag='BUTTON' /&gt;" Guid="c368a132-1ecc-457c-9c94-b13a175869a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fe8378d2-8822-46bc-901c-3b767f440ec2" CvTextArea="698, 749, 48, 17" CvTextArgument="? Help" CvType="Text" DesignTimeRectangle="695, 749, 50, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='dlgHelp' type='' tag='DIV' class='titleBarButton helpIcon' aaname='Help' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Help' /&gt;" Guid="56c7ab71-edef-4e99-9259-3d2441caae92" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dab24ec881ce3dcd5c126203f96630f4.png" xmlns="">0ubT-RJMbmUSbKBzBxiqe1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

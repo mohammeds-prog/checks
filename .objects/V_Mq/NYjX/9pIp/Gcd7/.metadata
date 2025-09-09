@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Date",
+  "Type": "Element",
+  "Id": "Gcd73wrL0U-cnf-DN0xA8w",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/Gcd73wrL0U-cnf-DN0xA8w",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/9pIpQAz-i02ebBIKn7IjNA",
+  "Created": "2025-09-09T13:52:19.8976612Z",
+  "Updated": "2025-09-09T13:52:19.8976612Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

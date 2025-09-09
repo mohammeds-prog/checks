@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Schedule",
+  "Type": "Element",
+  "Id": "JQz33Xw6_UyEcz7O3p8Hbg",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/JQz33Xw6_UyEcz7O3p8Hbg",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-04T21:11:08.5304389Z",
+  "Updated": "2025-09-04T21:11:08.5304389Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

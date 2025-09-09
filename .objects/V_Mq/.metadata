@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Dentrix Ascend - Overview",
+  "Type": "App",
+  "Id": "V_Mq-X_jh02G50QmJn81Cw",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/V_Mq-X_jh02G50QmJn81Cw",
+  "Created": "2025-09-04T21:10:34.1693412Z",
+  "Updated": "2025-09-04T21:10:34.1693412Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

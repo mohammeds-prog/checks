@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="c5Fl1_FjRki2AfdA58a8kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="03e70906-2124-4f8a-8a2b-c7a7b5589653" CvElementArea="571, 161, 19, 20" CvType="ArrowButton" DesignTimeRectangle="572, 151, 20, 42" FullSelectorArgument="&lt;webctrl id='drop2' tag='A' /&gt;" Guid="d12c814a-2872-49f9-8a8b-70169d539f49" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="03e70906-2124-4f8a-8a2b-c7a7b5589653" CvTextArea="506, 163, 58, 14" CvTextArgument="Schedule" CvType="Text" DesignTimeRectangle="476, 151, 93, 42" FuzzySelectorArgument="&lt;webctrl class='split-nav-link' type='' parentid='mainNavigationBar' tag='SPAN' aaname='                                                  Schedule                     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Schedule' /&gt;" Guid="27bb4227-e0ef-4b94-b84a-e7a20d62fb80" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a31fa6e20db544202ecf3d4347142cfc.png" xmlns="">0-iYbPAMWFEmThKps7SwzLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

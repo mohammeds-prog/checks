@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-nds53eXXEC0R4U9n-FMEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="9ad09d92-f683-4e06-81a4-80a774a4905a" CvTextArea="788, 842, 97, 15" CvTextArgument="Power Reporting" CvType="Text" DesignTimeRectangle="779, 835, 182, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='customReports' tag='A' /&gt;" Guid="77304893-d748-4f66-8920-e523327a7337" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9ad09d92-f683-4e06-81a4-80a774a4905a" CvElementArea="371, 149, 100, 44" CvTextArea="404, 164, 37, 12" CvTextArgument="Home" CvType="Button" DesignTimeRectangle="373, 151, 74, 42" FuzzySelectorArgument="&lt;webctrl parentid='mainNavigationBar' tag='SPAN' type='' class='split-nav-link' aaname='                                                  Home                     ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home' /&gt;" Guid="e29797f1-8d47-4200-936c-6d14c31072b7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6690f7ab869c16d82a3932ce4016e9f0.png" xmlns="">0yXxsoiPshUiwdDyf2f_PgQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

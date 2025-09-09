@@ -1,0 +1,13 @@
+﻿{
+  "Name": "A drop1",
+  "Type": "Element",
+  "Id": "thJ2S_8ebECTAzaLmtCODQ",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/thJ2S_8ebECTAzaLmtCODQ",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-04T21:11:32.7005067Z",
+  "Updated": "2025-09-04T21:11:32.7005067Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

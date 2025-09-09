@@ -1,0 +1,861 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugace="clr-namespace:UiPath.GSuite.Activities.Calendar.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugacm="clr-namespace:UiPath.GSuite.Activities.Calendar.Models;assembly=UiPath.GSuite.Activities" xmlns:ugcm="clr-namespace:UiPath.GSuite.Calendar.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.GSuite.Activities.Calendar.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>UiPath.GSuite.Calendar.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Activities.Calendar.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>Google.Apis.Calendar.v3.Data</x:String>
+      <x:String>Google.Apis.Requests</x:String>
+      <x:String>Google.Apis.Calendar.v3</x:String>
+      <x:String>Google.Apis</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Google.Apis.Calendar.v3</AssemblyReference>
+      <AssemblyReference>Google.Apis</AssemblyReference>
+      <AssemblyReference>Google.Apis.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1293,12690" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsA" />
+      <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsM" />
+      <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsN" />
+      <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calenderEventsR" />
+      <Variable x:TypeArguments="s:TimeZoneInfo" Name="chicagoTime" />
+      <Variable x:TypeArguments="s:DateTime" Name="rowStartDT" />
+      <Variable x:TypeArguments="ugcm:GSuiteEventItem" Name="existingEvent" />
+      <Variable x:TypeArguments="x:String" Name="summaryId" />
+      <Variable x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" Name="calendarEvents" />
+      <Variable x:TypeArguments="s:DateTimeOffset" Name="endDateTime" />
+      <Variable x:TypeArguments="s:DateTimeOffset" Name="startDateTime" />
+      <Variable x:TypeArguments="sd:DataTable" Name="finaluploadtable" />
+      <Variable x:TypeArguments="x:String" Name="latestfile" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Dentrix Ascend - Overview(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,4271" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,4021" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" ContentHash="BZiioDeyY0y5KnGMbPHy6Q" DesignTimeRectangle="450, 151, 20, 42" FuzzySelectorArgument="&lt;webctrl id='drop1' tag='A' type='' class='caretContainer dropdown-toggle noLoader nav-link' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fb339e39-1430-4511-bfa4-ab5471924bf6" InformativeScreenshot="1c14f47900d28acc41397606d1e5bafc.png" Reference="VCEinfAgLEeT0j_lz0nSIw/4VjG--s7AEaNZQh9qbVnww" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="defe823f-9b48-45a8-8ae0-a165d39898bc" CvElementArea="371, 147, 82, 46" CvTextArea="404, 164, 37, 12" CvTextArgument="Home" CvType="Button" DesignTimeRectangle="373, 151, 74, 42" FuzzySelectorArgument="&lt;webctrl parentid='mainNavigationBar' tag='SPAN' type='' class='split-nav-link' aaname='                                                  Home                     ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home' /&gt;" Guid="4334a558-8009-461a-a58e-e996ebfca1f9" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Power Reporting'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="9ad09d92-f683-4e06-81a4-80a774a4905a" ContentHash="-nds53eXXEC0R4U9n-FMEg" CvTextArea="788, 842, 97, 15" CvTextArgument="Power Reporting" CvType="Text" DesignTimeRectangle="779, 835, 182, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='customReports' tag='A' /&gt;" Guid="77304893-d748-4f66-8920-e523327a7337" InformativeScreenshot="6690f7ab869c16d82a3932ce4016e9f0.png" Reference="VCEinfAgLEeT0j_lz0nSIw/Lsnap2m710m4XkGNoXmT3A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="9ad09d92-f683-4e06-81a4-80a774a4905a" CvElementArea="371, 149, 100, 44" CvTextArea="404, 164, 37, 12" CvTextArgument="Home" CvType="Button" DesignTimeRectangle="373, 151, 74, 42" FuzzySelectorArgument="&lt;webctrl parentid='mainNavigationBar' tag='SPAN' type='' class='split-nav-link' aaname='                                                  Home                     ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home' /&gt;" Guid="e29797f1-8d47-4200-936c-6d14c31072b7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ScheduleRecare'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="8204aac7-8ba0-49de-b09a-c37d40e17967" ContentHash="60mouoNgcEWBhHov_RKG3A" CvTextArea="42, 798, 115, 14" CvTextArgument="Schedule/Recare" CvType="Text" DesignTimeRectangle="28, 786, 265, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Schedule/Recare' parentid='customReportCategories' tag='A' /&gt;" Guid="392b791e-33c9-4b29-8a0d-65decdf03941" InformativeScreenshot="1b53936a61230008ba926732b949ac6d.png" Reference="VCEinfAgLEeT0j_lz0nSIw/H4C83vVmDEuLLAmZIVOtMg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="8204aac7-8ba0-49de-b09a-c37d40e17967" CvTextArea="27, 213, 157, 24" CvTextArgument="Power Reporting" CvType="Text" DesignTimeRectangle="28, 211, 156, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='powerReportingTitle' tag='SPAN' type='' class='' aaname='Power Reporting' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Power Reporting' /&gt;" Guid="3d3e3dc9-8f88-455d-b0b9-eddf4c2a768a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Schedule Report (TSP)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="cbf21a89-15aa-467e-a64a-21da93a49a25" ContentHash="oZ2qyZl6IEC5Qb-xiIahPg" CvTextArea="971, 451, 133, 15" CvTextArgument="Schedule Report (TSP)" CvType="Text" DesignTimeRectangle="938, 380, 200, 120" FullSelectorArgument="&lt;webctrl class='customReportListEntry' idx='11' parentid='customReportList' tag='DIV' /&gt;" Guid="04ef1db4-a893-4b13-b8d4-9b8276611690" InformativeScreenshot="c7e66b131954b35ed648b99f8c46fbce.png" Reference="VCEinfAgLEeT0j_lz0nSIw/u2FJXSoCAEyUr6wm8sZ9KA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Date'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="3790ac2d-df13-46fa-8e02-b5891db96309" ContentHash="uJOAclRSe0OTpjC5koqWCQ" CvElementArea="522, 334, 23, 20" CvType="Icon" DesignTimeRectangle="523, 333, 22, 22" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='edit_filter_[time.isoDate].[day]_1' tag='I' /&gt;" Guid="881fafcb-3e9a-496b-9493-7b3797067752" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVEhL7dSxDcQgDEDRrMYA9AxAzwD09AzAFMzCFgxA55MLIo6YCBzlihPFVxLfxU+RohylFPhFRz94qw2x2xBZSgmstZBzvvxWewwhIqUEIQRorYfYI6hFnHO3GBtqEaUUxBghhHBi/f9ZUIsggE+Ay9tZf88y1COjWd8SRC2kZlTTELWQmo2agqiF1OyuKai+TVwEW4LwnINgF6hdVDPGnEcOQkL4zcKFbd77r+tVhITeakPs/g/6AMkhxPxNTemHAAAAAElFTkSuQmCC" InformativeScreenshot="b571c4e3e68fa56a001dd23f9b9afd81.png" Reference="VCEinfAgLEeT0j_lz0nSIw/Gcd73wrL0U-cnf-DN0xA8w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3790ac2d-df13-46fa-8e02-b5891db96309" CvTextArea="550, 338, 32, 12" CvTextArgument="Date" CvType="Text" DesignTimeRectangle="550, 335, 31, 18" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl tag='B' type='' class='' aaname='Date' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Date' /&gt;" Guid="102a5a40-552a-46d5-be0d-cdad192da998" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '(Select from date picke…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="23ebf871-70c9-4773-a4a9-0a3993cdc036" ContentHash="evsv0j_QM0GUYer27MW7Nw" CvTextArea="870, 691, 136, 14" CvTextArgument="(Select from date picker)" CvType="Text" DesignTimeRectangle="871, 686, 134, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='FT_FILTER_RANGE' tag='TABLE' /&gt;&lt;webctrl id='FT_openDatePicker' tableRow='3' tag='A' /&gt;" Guid="b9cac457-b864-43a1-8850-38dd003d36ec" InformativeScreenshot="b4bdf5290f6d812d4015211d65ddf509.png" Reference="VCEinfAgLEeT0j_lz0nSIw/txMDdFGxo0Oily2D4ywdJA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Begin Date'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Text="2025-09-09" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="c965a509-b3fe-44c9-ab42-57d881c639e8" ContentHash="r8FLiKpCU0KRcxbdQP0fmQ" CvElementArea="734, 500, 121, 38" CvType="InputBox" DesignTimeRectangle="736, 503, 92, 33" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aria-role='textbox' type='text' tag='INPUT' class='dijitReset dijitInputInner' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="cf869f7d-fce3-405a-8eac-c655f0b89688" InformativeScreenshot="051a1ac87391cbe3961f241bca14e0aa.png" IsResponsive="True" Reference="VCEinfAgLEeT0j_lz0nSIw/3t4q05Opo06IqRoS22iedg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c965a509-b3fe-44c9-ab42-57d881c639e8" CvTextArea="731, 478, 76, 16" CvTextArgument="Begin Date:" CvType="Text" DesignTimeRectangle="732, 475, 71, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Begin Date' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Begin Date' /&gt;" Guid="547d3525-1a3d-4025-9c82-d06f52bd4a1b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'End Date'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Text="2025-12-31" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="0ab3d372-304a-4689-9a84-077bc5280883" ContentHash="mzVPOPpBHEGmGNsNCm6baw" CvElementArea="973, 499, 101, 38" CvType="InputBox" DesignTimeRectangle="975, 502, 92, 33" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aria-role='textbox' class='dijitReset dijitInputInner' aaname='' tag='INPUT' type='text' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c06d40f6-c738-4937-9c78-51ee7c2a06ae" InformativeScreenshot="24a152852db697f862b331cbaa8bf8e9.png" IsResponsive="True" Reference="VCEinfAgLEeT0j_lz0nSIw/0ke4g5Lmj0GNuRA__XZoaw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0ab3d372-304a-4689-9a84-077bc5280883" CvTextArea="970, 476, 64, 14" CvTextArgument="End Date:" CvType="Text" DesignTimeRectangle="971, 474, 59, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='date-picker-dlg-wrapper' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='DP_range2' type='' tag='SPAN' class='' aaname='End Date' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='End Date' /&gt;" Guid="f198ab22-8daa-412b-bb62-3d329903e5c2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="9b4b67d5-1556-4fe7-8690-2549abcb12ef" ContentHash="X5hB9MbDJE6Tin64HsiwcA" CvElementArea="1034, 791, 83, 42" CvTextArea="1055, 804, 40, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1036, 792, 79, 39" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl class='button-panel' idx='2' parentid='standardDialog' tag='TABLE' /&gt;&lt;webctrl id='dlgBtnSave2' tableRow='1' tag='BUTTON' /&gt;" Guid="79b62788-4837-4052-b1ff-c3adddbb897e" InformativeScreenshot="7d56346dad4ddbbfd81a1639a8d8b4a6.png" Reference="VCEinfAgLEeT0j_lz0nSIw/CqiuBDrxJ0aIR2oKW1yDCA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="fe8378d2-8822-46bc-901c-3b767f440ec2" ContentHash="dY97CbRHI0m4VE_XJukqUQ" CvElementArea="1088, 735, 65, 42" CvTextArea="1110, 750, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1090, 737, 62, 39" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' /&gt;&lt;webctrl id='dlgBtnSave' tableRow='1' tag='BUTTON' /&gt;" Guid="c368a132-1ecc-457c-9c94-b13a175869a3" InformativeScreenshot="dab24ec881ce3dcd5c126203f96630f4.png" Reference="VCEinfAgLEeT0j_lz0nSIw/euXhprpNw0aZl19WcdG7nw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="fe8378d2-8822-46bc-901c-3b767f440ec2" CvTextArea="698, 749, 48, 17" CvTextArgument="? Help" CvType="Text" DesignTimeRectangle="695, 749, 50, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='dlgHelp' type='' tag='DIV' class='titleBarButton helpIcon' aaname='Help' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Help' /&gt;" Guid="56c7ab71-edef-4e99-9259-3d2441caae92" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh Report'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="6c3678b6-0fd1-489c-b926-9b2eb5e7587c" ContentHash="O4y48esib0-m_Om2ort8Eg" CvElementArea="1786, 361, 113, 31" CvTextArea="1793, 368, 99, 17" CvTextArgument="Refresh Report" CvType="Button" DesignTimeRectangle="1787, 363, 110, 28" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='cmdRefreshBtn' tag='BUTTON' /&gt;" Guid="e9621a96-f353-4494-82ff-64386f5d8837" InformativeScreenshot="2b4797d4744c26760a23c57fc4c87f15.png" Reference="VCEinfAgLEeT0j_lz0nSIw/Hk_FJanT80uDIzZ4ifx7VA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" ContentHash="zyPSSF1OTkWfOL98jfSRZA" DesignTimeRectangle="733, 270, 22, 22" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl parentid='cmdMoreActions' tag='DIV' /&gt;" Guid="e15585cc-2bba-4255-b476-332710dffa63" InformativeScreenshot="446766a53975d23ae6a7efb9d416dfb4.png" Reference="VCEinfAgLEeT0j_lz0nSIw/kn9Z8_bfVkKNUqBI289ekg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="492,170" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="749d7000-5391-4697-9b22-6a91b5b44ef8">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="492,170" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="down" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="34ab47fd-1288-43dc-ba6e-2ccb9a55d455">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="492,170" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="67cb4def-5e43-4f88-8093-148a47cf5975">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56aaad4e-6f77-49ff-80f2-e112e156beb9" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="live6.dentrixascend.com/pm" CVScreenId="3d5f056e-0835-46fc-9d30-788de06006ce" ContentHash="wKqWqnTM10uBxDvYhWpzyQ" CvElementArea="1049, 694, 89, 42" CvTextArea="1071, 708, 44, 16" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1051, 695, 85, 39" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' /&gt;&lt;webctrl id='dlgBtnDownload' tableRow='1' tag='BUTTON' /&gt;" Guid="f944fed4-d65f-4d1b-9f89-5ee789ad48de" InformativeScreenshot="eec6f770354f4b83ad443da8d3592384.png" Reference="VCEinfAgLEeT0j_lz0nSIw/eHcVvRYu3UCA2w21qtRJbQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3d5f056e-0835-46fc-9d30-788de06006ce" CvElementArea="962, 693, 80, 43" CvTextArea="984, 708, 36, 13" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="964, 695, 77, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='button-panel' parentid='standardDialog' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='dlgBtnSave' type='' tag='BUTTON' class='pentaho-button' aaname='Save settings to report and close this dialog' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Done' /&gt;" Guid="995d4370-1f4d-423e-9497-f44a5a2b7762" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,376" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="vkHbHyg8MUSpkpMWg-MgTA" IconBase64="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" InformativeScreenshot="c5583c9f9c31b5d798863871e314da5b.jpg" Reference="VCEinfAgLEeT0j_lz0nSIw/9pIpQAz-i02ebBIKn7IjNA" Selector="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" Url="https://live6.dentrixascend.com/pm#/dashboard" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uga:GetEventListConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" SimpleSearch="{x:Null}" AuthScopesInvalid="False" BrowserCalendarFriendlyName="ROMEOVILLE" BrowserCalendarId="c_16a68957a10074582d9319e5615d95aefb0cbf1ce62cf1564119cfe410d8baf5@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Get Event List" EndDate="2026-01-01 +00:00" EventList="[calenderEventsR]" sap:VirtualizedContainerService.HintSize="632,289" sap2010:WorkflowViewState.IdRef="GetEventListConnections_2" MaxResults="1000000000" PreferredReturnTimezone="UTC" StartDate="2025-09-08 +00:00" UseConnectionService="True">
+      <uga:GetEventListConnections.CalendarArgument>
+        <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_16a68957a10074582d9319e5615d95aefb0cbf1ce62cf1564119cfe410d8baf5@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="ROMEOVILLE" InputMode="Browse" />
+      </uga:GetEventListConnections.CalendarArgument>
+      <uga:GetEventListConnections.CalendarIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID0" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:GetEventListConnections.CalendarIdBackup>
+    </uga:GetEventListConnections>
+    <uga:GetEventListConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" SimpleSearch="{x:Null}" AuthScopesInvalid="False" BrowserCalendarFriendlyName="NAPERVILLE" BrowserCalendarId="c_8c434520e7bc7d42f550db1a73c17378a9d168ea387fdb86fb04d02eafe0f298@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Get Event List" EndDate="2026-01-01 +00:00" EventList="[calenderEventsN]" sap:VirtualizedContainerService.HintSize="632,289" sap2010:WorkflowViewState.IdRef="GetEventListConnections_3" MaxResults="1000000000" PreferredReturnTimezone="UTC" StartDate="2025-09-08 +00:00" UseConnectionService="True">
+      <uga:GetEventListConnections.CalendarArgument>
+        <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_8c434520e7bc7d42f550db1a73c17378a9d168ea387fdb86fb04d02eafe0f298@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="NAPERVILLE" InputMode="Browse" />
+      </uga:GetEventListConnections.CalendarArgument>
+      <uga:GetEventListConnections.CalendarIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID1" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:GetEventListConnections.CalendarIdBackup>
+    </uga:GetEventListConnections>
+    <uga:GetEventListConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" SimpleSearch="{x:Null}" AuthScopesInvalid="False" BrowserCalendarFriendlyName="MONTGOMERY" BrowserCalendarId="c_e8d8355a04e2839085b7182704293c5e6d2c36b9ec6ce38115d9ad88b12dbaad@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Get Event List" EndDate="2026-01-01 +00:00" EventList="[calenderEventsM]" sap:VirtualizedContainerService.HintSize="632,289" sap2010:WorkflowViewState.IdRef="GetEventListConnections_4" MaxResults="1000000000" PreferredReturnTimezone="UTC" StartDate="2025-09-08 +00:00" UseConnectionService="True">
+      <uga:GetEventListConnections.CalendarArgument>
+        <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID2}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_e8d8355a04e2839085b7182704293c5e6d2c36b9ec6ce38115d9ad88b12dbaad@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="MONTGOMERY" InputMode="Browse" />
+      </uga:GetEventListConnections.CalendarArgument>
+      <uga:GetEventListConnections.CalendarIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID2" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:GetEventListConnections.CalendarIdBackup>
+    </uga:GetEventListConnections>
+    <uga:GetEventListConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" SimpleSearch="{x:Null}" AuthScopesInvalid="False" BrowserCalendarFriendlyName="Alora Dental Spa Appointments" BrowserCalendarId="c_b1c7cb1209d8a8dafdd2dc4823ece9ed1667f23b199a93a7d15bf7fae3d13e7a@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Get Event List" EndDate="2026-01-01 +00:00" EventList="[calenderEventsA]" sap:VirtualizedContainerService.HintSize="632,289" sap2010:WorkflowViewState.IdRef="GetEventListConnections_1" MaxResults="1000000000" PreferredReturnTimezone="UTC" StartDate="2025-09-08 +00:00" UseConnectionService="True">
+      <uga:GetEventListConnections.CalendarArgument>
+        <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID3}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_b1c7cb1209d8a8dafdd2dc4823ece9ed1667f23b199a93a7d15bf7fae3d13e7a@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="Alora Dental Spa Appointments" InputMode="Browse" />
+      </uga:GetEventListConnections.CalendarArgument>
+      <uga:GetEventListConnections.CalendarIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID3" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:GetEventListConnections.CalendarIdBackup>
+    </uga:GetEventListConnections>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="632,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Alora count = &quot; &amp; If(calenderEventsA IsNot Nothing, calenderEventsA.Count.ToString(), &quot;NULL&quot;) &amp; vbCrLf &amp;&#xA;&quot;Main count = &quot; &amp; If(calenderEventsM IsNot Nothing, calenderEventsM.Count.ToString(), &quot;NULL&quot;) &amp; vbCrLf &amp;&#xA;&quot;N count = &quot; &amp; If(calenderEventsN IsNot Nothing, calenderEventsN.Count.ToString(), &quot;NULL&quot;) &amp; vbCrLf &amp;&#xA;&quot;R count = &quot; &amp; If(calenderEventsR IsNot Nothing, calenderEventsR.Count.ToString(), &quot;NULL&quot;)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="632,116" sap2010:WorkflowViewState.IdRef="Assign_26">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(ugcm:GSuiteEventItem)">[calendarEvents]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(ugcm:GSuiteEventItem)" xml:space="preserve">[(If(calenderEventsA, New List(Of GSuiteEventItem))).Concat(
+                  If(calenderEventsM, New List(Of GSuiteEventItem))).Concat(
+                  If(calenderEventsN, New List(Of GSuiteEventItem))).Concat(
+                  If(calenderEventsR, New List(Of GSuiteEventItem))).ToList()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="632,175" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;calendarEvents merged count = &quot; &amp; If(calendarEvents IsNot Nothing, calendarEvents.Count.ToString(), &quot;NULL&quot;)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="632,116" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[latestfile]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">[Directory.GetFiles("C:\Users\Rohini\Downloads\", "Schedule Report (TSP)*.csv") _
+    .OrderByDescending(Function(f) New FileInfo(f).CreationTime) _
+    .First()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[finaluploadtable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="[latestfile]" sap:VirtualizedContainerService.HintSize="632,170" sap2010:WorkflowViewState.IdRef="ReadCsvFile_3" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[finaluploadtable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="632,408" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[CurrentRow(&quot;Patient&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="632,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[finalUploadTable.Columns("Date").ColumnName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Start Date</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="632,115" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[finalUploadTable.Columns("Appt Time").ColumnName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Start Time</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="632,116" sap2010:WorkflowViewState.IdRef="Assign_19">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[finaluploadtable]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[finaluploadtable.AsEnumerable().
+    Where(Function(row) Not String.IsNullOrEmpty(row("Start Time").ToString.Replace(Chr(0), "").Trim) AndAlso
+                        row("Start Time").ToString.Replace(Chr(0), "").Trim.ToUpper &lt;&gt; "NOT AVAILABLE" AndAlso
+                        DateTime.TryParse(row("Start Time").ToString.Replace(Chr(0), "").Trim, Globalization.CultureInfo.InvariantCulture, Globalization.DateTimeStyles.None, Nothing)
+    ).CopyToDataTable()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Subject" DataTable="[finaluploadtable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="632,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[finaluploadtable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="632,408" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Patient: &quot; &amp; CurrentRow(&quot;Patient&quot;).ToString &amp; &quot; | Start Date: &quot; &amp; CurrentRow(&quot;Start Date&quot;).ToString &amp; &quot; | Start Time: &quot; &amp; CurrentRow(&quot;Start Time&quot;).ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[finaluploadtable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="632,5105" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="630,4932" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="596,115" sap2010:WorkflowViewState.IdRef="Assign_25">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:TimeZoneInfo">[chicagoTime]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:TimeZoneInfo">[TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="596,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[Currentrow("Subject")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[Currentrow("Patient")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="596,115" sap2010:WorkflowViewState.IdRef="Assign_21">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[summaryId]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow("Patient").ToString.Replace(Chr(0), "").Trim()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="596,116" sap2010:WorkflowViewState.IdRef="Assign_24">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTime">[rowStartDT]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[DateTime.ParseExact(
+    CurrentRow("Start Date").ToString().Trim() &amp; " " &amp;
+    CurrentRow("Start Time").ToString().Trim(),
+    {"yyyy-MM-dd h:mm tt", "yyyy-MM-dd hh:mm tt", "dd-MM-yyyy h:mm tt",  "dd-MM-yyyy hh:mm tt"},
+    Globalization.CultureInfo.InvariantCulture,
+    Globalization.DateTimeStyles.None
+)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="596,115" sap2010:WorkflowViewState.IdRef="Assign_23">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ugcm:GSuiteEventItem">[existingEvent]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ugcm:GSuiteEventItem">[calendarEvents.Where(Function(e) e.Summary.Replace(Chr(0), "").Trim() = summaryId.Replace(Chr(0), "").Trim() AndAlso TimeZoneInfo.ConvertTimeBySystemTimeZoneId(e.Start.DateTime, "America/Chicago") = rowStartDT).FirstOrDefault()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;CurrentRow: '&quot; &amp; summaryId &amp; &quot;' at &quot; &amp; rowStartDT.ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;) &amp; _&#xA;&quot;' comparing with calendarEvents: &quot; &amp; String.Join(&quot;, &quot;, calendarEvents.Select(Function(e) _&#xA;    e.Summary.Replace(Chr(0), &quot;&quot;).Trim() &amp; &quot;:&quot; &amp; _&#xA;    TimeZoneInfo.ConvertTimeBySystemTimeZoneId(e.Start.DateTime, &quot;America/Chicago&quot;).ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;)))]" />
+            <Assign sap:VirtualizedContainerService.HintSize="596,116" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTimeOffset">[startDateTime]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTimeOffset" xml:space="preserve">[New DateTimeOffset(
+    DateTime.ParseExact(CurrentRow("Start Date").ToString.Trim, "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture) _
+    + DateTime.Parse(CurrentRow("Start Time").ToString.Replace(Chr(0), "").Trim, System.Globalization.CultureInfo.InvariantCulture).TimeOfDay
+)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="596,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTimeOffset">[endDateTime]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTimeOffset">[startDateTime.AddHours(1)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[existingEvent Is Nothing]" sap:VirtualizedContainerService.HintSize="596,3890" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="594,3534" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[Currentrow(&quot;Location&quot;).ToString.Trim = &quot;Alora Dental Spa&quot;]" sap:VirtualizedContainerService.HintSize="560,3474" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,671" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uga:CreateEventConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Location="{x:Null}" OptionalAttendees="{x:Null}" Recurrence="{x:Null}" RequiredAttendees="{x:Null}" ResourceAttendees="{x:Null}" Result="{x:Null}" AddConferenceData="False" AllDayEvent="False" AuthScopesInvalid="False" BrowserCalendarFriendlyName="Alora Dental Spa Appointments" BrowserCalendarId="c_b1c7cb1209d8a8dafdd2dc4823ece9ed1667f23b199a93a7d15bf7fae3d13e7a@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Create Event" EndDateTime="[endDateTime]" GuestCanInviteOthers="True" GuestCanModifyEvent="False" GuestCanSeeAttendeesList="True" sap:VirtualizedContainerService.HintSize="524,445" sap2010:WorkflowViewState.IdRef="CreateEventConnections_3" PreferredReturnTimezone="America/Chicago" SendNotification="ALL" ShowAs="Opaque" StartDateTime="[startDateTime]" Timezone="America/Chicago" Title="[Currentrow(&quot;Subject&quot;).ToString]" UseConnectionService="True" Visibility="DEFAULT">
+                          <uga:CreateEventConnections.CalendarArgument>
+                            <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID4}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_b1c7cb1209d8a8dafdd2dc4823ece9ed1667f23b199a93a7d15bf7fae3d13e7a@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="Alora Dental Spa Appointments" InputMode="Browse" />
+                          </uga:CreateEventConnections.CalendarArgument>
+                          <uga:CreateEventConnections.CalendarIdBackup>
+                            <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID4" StoredValue="Browse">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </uga:CreateEventConnections.CalendarIdBackup>
+                          <uga:CreateEventConnections.Description>
+                            <InArgument x:TypeArguments="x:String" />
+                          </uga:CreateEventConnections.Description>
+                        </uga:CreateEventConnections>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Event created for: &quot; &amp; CurrentRow(&quot;Patient&quot;).ToString &amp; &quot;in alora&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,2673" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[Currentrow(&quot;Location&quot;).ToString.Trim = &quot;Valley View Dental Romeoville&quot;]" sap:VirtualizedContainerService.HintSize="524,2613" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,671" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uga:CreateEventConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Location="{x:Null}" OptionalAttendees="{x:Null}" Recurrence="{x:Null}" RequiredAttendees="{x:Null}" ResourceAttendees="{x:Null}" Result="{x:Null}" AddConferenceData="False" AllDayEvent="False" AuthScopesInvalid="False" BrowserCalendarFriendlyName="ROMEOVILLE" BrowserCalendarId="c_16a68957a10074582d9319e5615d95aefb0cbf1ce62cf1564119cfe410d8baf5@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Create Event" EndDateTime="[endDateTime]" GuestCanInviteOthers="True" GuestCanModifyEvent="False" GuestCanSeeAttendeesList="True" sap:VirtualizedContainerService.HintSize="488,445" sap2010:WorkflowViewState.IdRef="CreateEventConnections_4" PreferredReturnTimezone="America/Chicago" SendNotification="ALL" ShowAs="Opaque" StartDateTime="[startDateTime]" Timezone="America/Chicago" Title="[Currentrow(&quot;Subject&quot;).ToString]" UseConnectionService="True" Visibility="DEFAULT">
+                                <uga:CreateEventConnections.CalendarArgument>
+                                  <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID5}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_16a68957a10074582d9319e5615d95aefb0cbf1ce62cf1564119cfe410d8baf5@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="ROMEOVILLE" InputMode="Browse" />
+                                </uga:CreateEventConnections.CalendarArgument>
+                                <uga:CreateEventConnections.CalendarIdBackup>
+                                  <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID5" StoredValue="Browse">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </uga:CreateEventConnections.CalendarIdBackup>
+                                <uga:CreateEventConnections.Description>
+                                  <InArgument x:TypeArguments="x:String" />
+                                </uga:CreateEventConnections.Description>
+                              </uga:CreateEventConnections>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Event created for: &quot; &amp; CurrentRow(&quot;Patient&quot;).ToString &amp; &quot;in ROmeoville&quot;]" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,1812" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Currentrow(&quot;Location&quot;).ToString.Trim = &quot;Valley View Dental Naperville&quot;]" sap:VirtualizedContainerService.HintSize="488,1752" sap2010:WorkflowViewState.IdRef="If_4">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,671" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uga:CreateEventConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Location="{x:Null}" OptionalAttendees="{x:Null}" Recurrence="{x:Null}" RequiredAttendees="{x:Null}" ResourceAttendees="{x:Null}" Result="{x:Null}" AddConferenceData="False" AllDayEvent="False" AuthScopesInvalid="False" BrowserCalendarFriendlyName="NAPERVILLE" BrowserCalendarId="c_8c434520e7bc7d42f550db1a73c17378a9d168ea387fdb86fb04d02eafe0f298@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Create Event" EndDateTime="[endDateTime]" GuestCanInviteOthers="True" GuestCanModifyEvent="False" GuestCanSeeAttendeesList="True" sap:VirtualizedContainerService.HintSize="452,445" sap2010:WorkflowViewState.IdRef="CreateEventConnections_5" PreferredReturnTimezone="America/Chicago" SendNotification="ALL" ShowAs="Opaque" StartDateTime="[startDateTime]" Timezone="America/Chicago" Title="[Currentrow(&quot;Subject&quot;).ToString]" UseConnectionService="True" Visibility="DEFAULT">
+                                      <uga:CreateEventConnections.CalendarArgument>
+                                        <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID6}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_8c434520e7bc7d42f550db1a73c17378a9d168ea387fdb86fb04d02eafe0f298@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="NAPERVILLE" InputMode="Browse" />
+                                      </uga:CreateEventConnections.CalendarArgument>
+                                      <uga:CreateEventConnections.CalendarIdBackup>
+                                        <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID6" StoredValue="Browse">
+                                          <usau:BackupSlot.BackupValues>
+                                            <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+                                          </usau:BackupSlot.BackupValues>
+                                        </usau:BackupSlot>
+                                      </uga:CreateEventConnections.CalendarIdBackup>
+                                      <uga:CreateEventConnections.Description>
+                                        <InArgument x:TypeArguments="x:String" />
+                                      </uga:CreateEventConnections.Description>
+                                    </uga:CreateEventConnections>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Event created for: &quot; &amp; CurrentRow(&quot;Patient&quot;).ToString &amp; &quot;in naperville&quot;]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,951" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If Condition="[Currentrow(&quot;Location&quot;).ToString.Trim = &quot;Valley View Dental Montgomery&quot;]" sap:VirtualizedContainerService.HintSize="452,891" sap2010:WorkflowViewState.IdRef="If_5">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,671" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uga:CreateEventConnections Calendar="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Location="{x:Null}" OptionalAttendees="{x:Null}" Recurrence="{x:Null}" RequiredAttendees="{x:Null}" ResourceAttendees="{x:Null}" Result="{x:Null}" AddConferenceData="False" AllDayEvent="False" AuthScopesInvalid="False" BrowserCalendarFriendlyName="MONTGOMERY" BrowserCalendarId="c_e8d8355a04e2839085b7182704293c5e6d2c36b9ec6ce38115d9ad88b12dbaad@group.calendar.google.com" CalendarInputMode="Browse" ConnectionId="1c061e5f-8693-49ee-8dd6-8aa84c36477d" DisplayName="Create Event" EndDateTime="[endDateTime]" GuestCanInviteOthers="True" GuestCanModifyEvent="False" GuestCanSeeAttendeesList="True" sap:VirtualizedContainerService.HintSize="416,445" sap2010:WorkflowViewState.IdRef="CreateEventConnections_6" PreferredReturnTimezone="America/Chicago" SendNotification="ALL" ShowAs="Opaque" StartDateTime="[startDateTime]" Timezone="America/Chicago" Title="[Currentrow(&quot;Subject&quot;).ToString]" UseConnectionService="True" Visibility="DEFAULT">
+                                            <uga:CreateEventConnections.CalendarArgument>
+                                              <ugacm:CalendarArgument Backup="{x:Reference __ReferenceID7}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" BrowserId="c_e8d8355a04e2839085b7182704293c5e6d2c36b9ec6ce38115d9ad88b12dbaad@group.calendar.google.com" ConnectionKey="1c061e5f-8693-49ee-8dd6-8aa84c36477d" FriendlyName="MONTGOMERY" InputMode="Browse" />
+                                            </uga:CreateEventConnections.CalendarArgument>
+                                            <uga:CreateEventConnections.CalendarIdBackup>
+                                              <usau:BackupSlot x:TypeArguments="ugace:ECalendarMode" x:Name="__ReferenceID7" StoredValue="Browse">
+                                                <usau:BackupSlot.BackupValues>
+                                                  <scg:Dictionary x:TypeArguments="ugace:ECalendarMode, scg:List(x:Object)" />
+                                                </usau:BackupSlot.BackupValues>
+                                              </usau:BackupSlot>
+                                            </uga:CreateEventConnections.CalendarIdBackup>
+                                            <uga:CreateEventConnections.Description>
+                                              <InArgument x:TypeArguments="x:String" />
+                                            </uga:CreateEventConnections.Description>
+                                          </uga:CreateEventConnections>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Event created for: &quot; &amp; CurrentRow(&quot;Patient&quot;).ToString &amp; &quot;in montgomery&quot;]" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="594,226" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,166" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;already done&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BZiioDeyY0y5KnGMbPHy6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" DesignTimeRectangle="450, 151, 20, 42" FuzzySelectorArgument="&lt;webctrl id='drop1' tag='A' type='' class='caretContainer dropdown-toggle noLoader nav-link' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fb339e39-1430-4511-bfa4-ab5471924bf6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Overview' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="defe823f-9b48-45a8-8ae0-a165d39898bc" CvElementArea="371, 147, 82, 46" CvTextArea="404, 164, 37, 12" CvTextArgument="Home" CvType="Button" DesignTimeRectangle="373, 151, 74, 42" FuzzySelectorArgument="&lt;webctrl parentid='mainNavigationBar' tag='SPAN' type='' class='split-nav-link' aaname='                                                  Home                     ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home' /&gt;" Guid="4334a558-8009-461a-a58e-e996ebfca1f9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1c14f47900d28acc41397606d1e5bafc.png" xmlns="">0mCSVHkmOaEOrJ-1p2wQzQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

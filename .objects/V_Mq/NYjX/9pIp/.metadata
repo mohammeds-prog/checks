@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Dentrix Ascend - Overview(1)",
+  "Type": "Screen",
+  "Id": "9pIpQAz-i02ebBIKn7IjNA",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/9pIpQAz-i02ebBIKn7IjNA",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/NYjXzJi9XU2Z3uWkH2e-OQ",
+  "Created": "2025-09-09T13:47:42.3254304Z",
+  "Updated": "2025-09-09T13:47:42.3254304Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

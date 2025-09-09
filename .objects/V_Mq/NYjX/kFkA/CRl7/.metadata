@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Power Reporting    Sch…",
+  "Type": "Element",
+  "Id": "CRl7wKl0FESEifA5OnroUQ",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/CRl7wKl0FESEifA5OnroUQ",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-08T16:25:24.9638988Z",
+  "Updated": "2025-09-08T16:25:24.9638988Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

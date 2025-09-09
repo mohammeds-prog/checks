@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Schedule Report (TSP)",
+  "Type": "Element",
+  "Id": "_WQJ8x7RKkmCY3xCoVY0Fg",
+  "Reference": "VCEinfAgLEeT0j_lz0nSIw/_WQJ8x7RKkmCY3xCoVY0Fg",
+  "ParentRef": "VCEinfAgLEeT0j_lz0nSIw/kFkAs2kJNkmiTl6whoGuMw",
+  "Created": "2025-09-04T21:14:14.2816363Z",
+  "Updated": "2025-09-04T21:14:14.2816363Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

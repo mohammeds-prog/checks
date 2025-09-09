@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3cWj3cA9oUCdWu4iqosaEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="f23312e6-dd9c-4c89-83f6-902097f46e57" CvTextArea="42, 798, 115, 14" CvTextArgument="Schedule/Recare" CvType="Text" DesignTimeRectangle="28, 786, 265, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Schedule/Recare' parentid='customReportCategories' tag='A' /&gt;" Guid="33ecc16f-7661-4db7-aaec-96d4554b53c6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="aca0a4c6c38ad67631c2402c779c56ff.png" xmlns="">0kI8IEjKHVEqkxU44BKZXLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O4y48esib0-m_Om2ort8Eg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="6c3678b6-0fd1-489c-b926-9b2eb5e7587c" CvElementArea="1786, 361, 113, 31" CvTextArea="1793, 368, 99, 17" CvTextArgument="Refresh Report" CvType="Button" DesignTimeRectangle="1787, 363, 110, 28" ElementType="Button" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='cmdRefreshBtn' tag='BUTTON' /&gt;" Guid="e9621a96-f353-4494-82ff-64386f5d8837" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2b4797d4744c26760a23c57fc4c87f15.png" xmlns="">0IYW47uK4_EWIZWBJxJkG5A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="60mouoNgcEWBhHov_RKG3A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="8204aac7-8ba0-49de-b09a-c37d40e17967" CvTextArea="42, 798, 115, 14" CvTextArgument="Schedule/Recare" CvType="Text" DesignTimeRectangle="28, 786, 265, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Schedule/Recare' parentid='customReportCategories' tag='A' /&gt;" Guid="392b791e-33c9-4b29-8a0d-65decdf03941" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8204aac7-8ba0-49de-b09a-c37d40e17967" CvTextArea="27, 213, 157, 24" CvTextArgument="Power Reporting" CvType="Text" DesignTimeRectangle="28, 211, 156, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='powerReportingTitle' tag='SPAN' type='' class='' aaname='Power Reporting' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Power Reporting' /&gt;" Guid="3d3e3dc9-8f88-455d-b0b9-eddf4c2a768a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1b53936a61230008ba926732b949ac6d.png" xmlns="">0Q5z0kVZzLkeiMzn55gvohA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

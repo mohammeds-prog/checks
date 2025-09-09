@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uJOAclRSe0OTpjC5koqWCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="3790ac2d-df13-46fa-8e02-b5891db96309" CvElementArea="522, 334, 23, 20" CvType="Icon" DesignTimeRectangle="523, 333, 22, 22" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='edit_filter_[time.isoDate].[day]_1' tag='I' /&gt;" Guid="881fafcb-3e9a-496b-9493-7b3797067752" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVEhL7dSxDcQgDEDRrMYA9AxAzwD09AzAFMzCFgxA55MLIo6YCBzlihPFVxLfxU+RohylFPhFRz94qw2x2xBZSgmstZBzvvxWewwhIqUEIQRorYfYI6hFnHO3GBtqEaUUxBghhHBi/f9ZUIsggE+Ay9tZf88y1COjWd8SRC2kZlTTELWQmo2agqiF1OyuKai+TVwEW4LwnINgF6hdVDPGnEcOQkL4zcKFbd77r+tVhITeakPs/g/6AMkhxPxNTemHAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3790ac2d-df13-46fa-8e02-b5891db96309" CvTextArea="550, 338, 32, 12" CvTextArgument="Date" CvType="Text" DesignTimeRectangle="550, 335, 31, 18" FuzzySelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl tag='B' type='' class='' aaname='Date' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Date' /&gt;" Guid="102a5a40-552a-46d5-be0d-cdad192da998" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b571c4e3e68fa56a001dd23f9b9afd81.png" xmlns="">07ntgfBKb7kCs9RV4MdGicQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

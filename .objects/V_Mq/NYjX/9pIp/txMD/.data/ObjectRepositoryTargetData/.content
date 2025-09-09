@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="evsv0j_QM0GUYer27MW7Nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live6.dentrixascend.com/pm" CVScreenId="23ebf871-70c9-4773-a4a9-0a3993cdc036" CvTextArea="870, 691, 136, 14" CvTextArgument="(Select from date picker)" CvType="Text" DesignTimeRectangle="871, 686, 134, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl id='customReportIframe' tag='IFRAME' /&gt;&lt;webctrl id='iframe1' tag='IFRAME' /&gt;&lt;webctrl id='FT_FILTER_RANGE' tag='TABLE' /&gt;&lt;webctrl id='FT_openDatePicker' tableRow='3' tag='A' /&gt;" Guid="b9cac457-b864-43a1-8850-38dd003d36ec" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dentrix Ascend - Power Reporting' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b4bdf5290f6d812d4015211d65ddf509.png" xmlns="">0iWil1jgyZk6oCXNfMvcEXg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
